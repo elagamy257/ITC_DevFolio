@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="wid th=device-width, initial-scale=1.0" />
+    <title>El-Agamy</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <!-- nav -->
+    <nav class="navbar navbar-dark navbar-expand-lg bg-black fixed-top">
+      <div class="container">
+        <a class="navbar-brand fs-4" href="#">DevFolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#portfolio">Work</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#blog">Blog</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Drop down
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                <li class="dropdown dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false" >Deep Drop Down
+                    </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Deep Drop Down 1</a></li>
+                    <li><a class="dropdown-item" href="#">Deep Drop Down 2</a></li>
+                    <li><a class="dropdown-item" href="#">Deep Drop Down 3</a></li>
+                    <li><a class="dropdown-item" href="#">Deep Drop Down 4</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+                <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- header -->
+      <section
+        id="home"
+        class="min-vh-100 text-white d-flex justify-content-center align-items-center bg-img">
+        <div class="caption text-center">
+          <h1>I am Aya El-Agamy</h1>
+          <p id="typewriter"></p>
+        </div>
+      </section>
+      
+      <!-- about -->
+      <section id="about" class="container about-section mt-5 p-5 shadow bg-white">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="row text-center text-lg-start g-3">
+              <div class="col-12 col-lg-5">
+                <img src="./images/testimonial-2.jpg" alt="My image" class="rounded"/>
+              </div>
+              <div class="col-12 col-lg-7">
+                <ul class="list-group mt-lg-0 mt-sm-5">
+                  <li class="list-group-item border-0">
+                    <span class="fw-bold">Name: </span> Aya El-Agamy
+                  </li>
+                  <li class="list-group-item border-0">
+                    <span class="fw-bold">Profile: </span> full stack developer
+                  </li>
+                  <li class="list-group-item border-0">
+                    <span class="fw-bold">Email: </span>contact@example.com
+                  </li>
+                  <li class="list-group-item border-0">
+                    <span class="fw-bold">Phone: </span>(617) 557-0089
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="personal-info col-12">
+                <span class="fw-bold fa-xl">Skills</span>
+                <ul class="list-group mt-lg-0 mt-sm-5">
+                  <li class="list-group-item border-0 p-0 pt-3">
+                    <span>HTML 85%</span>
+                    <div class="progress-stacked rounded-0 mt-2">
+                      <div class="progress" style="width: 85%">
+                        <div class="progress-bar"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-0 p-0 pt-3">
+                    <span>CSS 75%</span>
+                    <div class="progress-stacked rounded-0 mt-2">
+                      <div class="progress" style="width: 75%">
+                        <div class="progress-bar"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-0 p-0 pt-3">
+                    <span>PHP 50%</span>
+                    <div class="progress-stacked rounded-0 mt-2">
+                      <div class="progress" style="width: 50%">
+                        <div class="progress-bar"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item border-0 p-0 pt-3">
+                    <span>JAVASCRIPT 90%</span>
+                    <div class="progress-stacked rounded-0 mt-2">
+                      <div class="progress" style="width: 90%">
+                        <div class="progress-bar"></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="row mt-5 mt-lg-2">
+              <h2 class="mb-5 section-sub-title">About me</h2>
+              <p class="about-p">
+                Curabitur non nulla sit amet nisl tempus convallis quis ac
+                lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                at sem. Praesent sapien massa, convallis a pellentesque nec,
+                egestas non nisi. Nulla porttitor accumsan tincidunt.
+              </p>
+              <p class="about-p">
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Vivamus suscipit tortor eget felis porttitor volutpat.
+                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+                dui. porttitor at sem.
+              </p>
+              <p class="about-p">
+                Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium
+                ut lacinia in, elementum id enim. Nulla porttitor accumsan
+                tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh
+                pulvinar a.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- <footer class="text-center p-4 text-white">
+        © Copyright <b>DevFolio</b>. All Rights Reserved <br />
+        Designed by Alshlqany
+      </footer> -->
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
