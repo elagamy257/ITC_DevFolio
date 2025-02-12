@@ -62,6 +62,34 @@ nav .dropdown:hover > .dropdown-menu {
   }
 }
 
+#typewriter {
+  position: relative;
+}
+#typewriter::after {
+  content: "";
+  display: inline-blocks;
+  width: 3px;
+  height: 1em;
+  background-color: white;
+  top: 20%;
+  position: absolute;
+}
+.cursor::after {
+  animation: cursor 0.7s infinite;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* about */
 .section-sub-title {
   position: relative;
@@ -82,3 +110,146 @@ nav .dropdown:hover > .dropdown-menu {
   font-weight: 100;
   font-size: 1.25rem;
 }
+
+/* services */
+.title {
+  text-align: center;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.title h2 {
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.title:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  width: 10%;
+  background-color: #0078ff;
+}
+.card .circle{
+  width: 100px;
+  height: 100px;
+  border: 10px solid #0078FF;
+  border-radius: 50%;
+  margin: auto;
+  transition: all 1s;
+  font-size: 30px;
+}
+.card:hover .circle{
+  border: 10px solid #C4DCF8;
+  color: white;
+  background-color: #0078FF;
+}
+
+/* static */
+.statistics {
+  background-image: url("../images/counters-bg.jpg");
+}
+
+.statistics::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 119, 255, 0.7);
+}
+.statistics i {
+  border: 10px solid #b4ceec;
+  width: 90px;
+  height: 90px;
+  font-size: 30px;
+}
+
+/* work */
+#work .header{
+  text-align: center;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+#work .header h2{
+  font-weight: 700;
+  font-size: 48px;
+}
+
+#work .header p{
+  color: 
+  rgb(78, 78, 78);
+}
+
+.header:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  width: 10%;
+  background-color: #0078ff;
+}
+
+.card-item {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+}
+.cards .card-item i {
+  border: 10px solid #0078ff;
+  width: 110px;
+  height: 110px;
+  align-content: center;
+  font-size: 30px;
+  margin: 0 auto;
+  transition: 0.5s ease;
+}
+
+.cards .card-item:hover i {
+  background-color: #0078ff;
+  border-color: #b4ceec;
+  color: white;
+}
+
+.text{
+  color: #0078ff;
+}
+
+#work i {
+  font-size: 25px;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  color: #0078ff;
+  border: 3px solid #0078ff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#work .card {
+  display: block;
+  overflow: hidden;
+}
+#work .card  img{
+  transition: all 2s;
+}
+#work .card:hover  img{
+  transform: scale(1.3);
+}
+
+
+
+/* footer */
+footer {
+  background-color: #0062d3;
+}
+
