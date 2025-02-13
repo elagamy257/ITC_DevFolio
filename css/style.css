@@ -1,8 +1,4 @@
-body {
-  background-color: #f5f5f5;
-  color: #4e4e4e;
-}
-
+/* background */
 .bg-img {
   background-size: cover;
   background-position: center;
@@ -266,8 +262,26 @@ nav .dropdown:hover > .dropdown-menu {
 }
 
 /* blog */
-
-
+#blog .card-body {
+  position: relative;
+}
+#blog .type {
+  position: absolute;
+  background-color: #0078ff;
+  color: white;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#blog  a{
+  color: black;
+  font-weight: 400;
+  font-size: 19px;
+  margin-right:120px;
+}
+#blog a:hover{
+  color: #0078FF;
+}
 /* contact */
 .contact {
   background-image: url(../images/overlay-bg.jpg);
