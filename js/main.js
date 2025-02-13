@@ -21,36 +21,9 @@ async function Startwriter() {
     }
 }
 Startwriter();
-
-
-
-    document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav-link");
-
-    const observer = new IntersectionObserver(
-        (entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-            navLinks.forEach((link) => link.classList.remove("active"));
-
-            const activeLink = document.querySelector(
-                `.nav-link[href="#${entry.target.id}"]`
-            );
-            console.log(entry.target.id, activeLink);
-            activeLink.classList.add("active");
-            }
-        });
-        },
-        { threshold: 0.5 }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-    });
-
     
-    //  static counter
-    async function startCounter() {
+//  static counter
+async function startCounter() {
     const statsElements = Array.from(document.querySelectorAll(".statistics p"));
     const maxNumbers = statsElements.map((element) => Number(element.innerText));
     for (const element of statsElements) element.innerText = "0";
@@ -62,9 +35,9 @@ Startwriter();
         }
         await sleep(0);
     }
-    }
-    startCounter();
+}
+startCounter();
 
-    function sleep(ms) {
+function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
-    }
+}
