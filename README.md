@@ -21,4 +21,4 @@ This is a simple portfolio website built using **Bootstrap**. The website showca
 - JavaScript (optional for interactivity)
 
 ## Live Demo
-Check out the live demo of the website: [DevFolio Website](https://elagamy257.github.io/DevFolio-Website/)
+Check out the live demo of the website: [DevFolio Website](https://elagamy-devfolio.netlify.app/)
